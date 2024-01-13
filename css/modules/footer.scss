@@ -1,0 +1,40 @@
+@import "body";
+
+// Until populated
+section.footer-link-section {
+  display: none;
+}
+
+.text-center.p-4 {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+button#close-btn {
+  background-color: #ffffff;
+  border: 2px solid #242b2f;
+  border-radius: 0px;
+  padding: 6px;
+}
+div#popup-container {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px;
+
+  a {
+    font-weight: 500;
+    color: $accent;
+  }
+
+  p {
+    color: $accent;
+    font-weight: 700;
+  }
+}
+
+section.d-flex.justify-content-center {
+  padding: 20px;
+}
