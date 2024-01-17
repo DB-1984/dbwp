@@ -6,7 +6,6 @@ class MenuOverlayShow {
     this.menuIconShape.addEventListener("click", () => {
       this.toggleMenu();
       this.stopScroll();
-      this.headerChange();
     });
 
     document.addEventListener("keyup", (e) => this.escKeyClose(e));
@@ -14,7 +13,7 @@ class MenuOverlayShow {
 
   stopScroll() {
     const navEls = [
-      document.querySelector("body > header > div.header-nav.header-bg"),
+      document.querySelector("body > header > div.header-nav"),
       document.querySelector("div.logo > a > p"),
     ];
 
@@ -26,14 +25,6 @@ class MenuOverlayShow {
         );
       }
     });
-  }
-
-  headerChange() {
-    const header = document.querySelector("header-nav");
-    header.classList.toggle(
-      "header-noscroll",
-      this.overlayNav.classList.contains("active")
-    );
   }
 
   toggleMenu() {
