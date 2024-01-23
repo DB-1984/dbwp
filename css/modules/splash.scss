@@ -140,7 +140,8 @@ hr.above-d4 {
 }
 
 button#usp-anchor {
-  border-color: black;
+  border-color: white;
+  color: white;
   position: relative;
   z-index: 4;
   width: 250px !important;
@@ -182,7 +183,7 @@ div#latest-posts {
     margin-top: 40vw;
   }
   @media (min-width: 576px) {
-    margin-top: 25vh;
+    margin-top: 20vh;
   }
   .lead {
     margin-top: 0;
