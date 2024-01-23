@@ -14,7 +14,7 @@ class MenuOverlayShow {
 
   stopScroll() {
     const navEls = [
-      document.querySelector("body > header > div.header-nav.header-bg"),
+      document.querySelector("header-nav"),
       document.querySelector("div.logo > a > p"),
     ];
 
@@ -31,7 +31,7 @@ class MenuOverlayShow {
   headerChange() {
     const header = document.querySelector("header-nav");
     header.classList.toggle(
-      "header-noscroll",
+      "modal-open",
       this.overlayNav.classList.contains("active")
     );
   }

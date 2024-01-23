@@ -13,7 +13,7 @@
             Start here
           </button>
         </div>
-        <img data-aos="fade-up" src="<?php echo get_theme_file_uri('assets\mntn.png'); ?>" alt="Hero Image" class="img-fluid mt-4" style="max-width: 100%; margin-top: 0rem!important">
+        <img data-aos="fade-up" src="<?php echo get_theme_file_uri('assets\mntn.png'); ?>" alt="Hero Image" class="img-fluid mt-4" style="max-width: 100%; margin-top: -20rem!important">
       </div>
     </div>
   </div>
