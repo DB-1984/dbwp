@@ -19,6 +19,7 @@ function searchAPI() {
       // Initialise contents
       resultsContainer.innerHTML = "";
 
+      // Use a Promise to synchronise fetches, and chain .then to this Promise
       Promise.all([
         // Send an array of fetch requests
         fetch("/wp-json/wp/v2/posts?search=" + searchQuery),

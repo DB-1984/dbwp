@@ -3,15 +3,12 @@
 
 .blog-title {
   margin-top: 175px !important;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Set the text color to white or any other color you prefer */
 }
-/*
-.featured-image.blog-index {
-    padding: 20px !important;
-
-    &img {
-        border-radius: 4px;
-    }
-}*/
 
 h1.blog-title {
   font-weight: 800;
@@ -45,20 +42,24 @@ p.blog-intro {
     color: #303030;
     font-weight: 600;
   }
+
   .cta {
     width: fit-content;
     margin: 0 auto;
   }
 }
+
 .blog-header {
-  margin: 150px 0px 100px 0px;
+  margin: 150px 0 100px;
 }
+
 div.card {
   border: none !important;
   background: #e5e5e5 !important;
   padding: 10px;
   margin: 5px;
 }
+
 .blog-btn {
   color: #303030 !important;
   &:hover {
@@ -67,17 +68,11 @@ div.card {
     border-color: #303030 !important;
   }
 }
+
 a#latest-post-link {
   color: #303030 !important;
-  transition: color, 0.3s ease-in;
+  transition: color 0.3s ease-in;
   &:hover {
     color: #7e7e7e !important;
   }
-}
-.blog-title {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white; /* Set the text color to white or any other color you prefer */
 }

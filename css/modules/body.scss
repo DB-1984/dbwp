@@ -1,46 +1,50 @@
 @import "media-queries";
 
+// Variables
 $highlight: #1bb6e5;
 $accent: #fff;
 $hover: #ffbc34;
+$light-gray: #bcbcbc;
+$dark-gray: #303030;
 
+// Body styles
 body {
   font-family: "Manrope", sans-serif !important;
   font-weight: 400;
-  background: #212121 !important;
+  background: $accent !important;
   color: $accent !important;
+
   &.modal-open {
     overflow: hidden;
   }
 }
 
 .cform {
-  color: #303030;
+  color: $dark-gray;
 }
 
-@media (max-width: 991px) {
-  .container.mt-5 {
-    padding-right: 0px !important;
-  }
-}
-
+// Links
 a {
-  color: #bcbcbc !important;
+  color: $light-gray !important;
   transition: color 0.5s ease-in !important;
+
   &:active,
   &:focus {
-    color: #bcbcbc !important;
+    color: $light-gray !important;
   }
+
   &:hover:not(.logo-link, .nav-content, .result-link) {
-    color: #fff !important;
+    color: $accent !important;
   }
 }
 
+// Buttons
 a.btn.btn-primary.cta:active {
   background: none !important;
   border: 3px solid white;
 }
 
+// Logo Text
 p.logo-text {
   margin-bottom: 0px;
   color: #e5e5e5;
@@ -48,9 +52,11 @@ p.logo-text {
   font-family: "Black Ops One", sans-serif;
   letter-spacing: -10px;
   transition: color 0.6s ease-in;
+
   &:hover {
-    color: #bcbcbc !important;
+    color: $light-gray !important;
   }
+
   &.modal-open {
     color: #777 !important;
   }
@@ -60,11 +66,13 @@ a.logo-link {
   text-decoration: none !important;
 }
 
+// Layout
 .row > * {
   padding-right: calc(var(--bs-gutter-x) * 0.8) !important;
   padding-left: calc(var(--bs-gutter-x) * 0.8) !important;
 }
 
+// Text styles
 .text-highlight {
   font-weight: 600;
   text-decoration: underline;
@@ -92,9 +100,9 @@ h2.display-4 {
 h1.display-5 {
   font-weight: 700 !important;
   color: #e5e5e5;
+
   &.usp {
-    color: #303030 !important;
-    //background-image: url("/assets/mntn.png");
+    color: $dark-gray !important;
   }
 }
 
@@ -103,69 +111,30 @@ h1.display-4 {
   color: #e5e5e5;
   line-height: 5rem;
   z-index: 5;
-  /*
-  @media (min-width: 576px) {
-    font-size: 90px;
-  }
-
-  @media (min-width: 449px) and (max-width: 575px) {
-    font-size: 75px !important;
-    line-height: 5rem !important;
-  }
-
-  @media (max-width: 448px) and (min-width: 370px) {
-    font-size: 65px !important;
-    line-height: 4rem !important;
-  }
-
-  @media (max-width: 369px) {
-    font-size: 45px;
-    line-height: 3rem !important;
-  }*/
 }
 
 span.text-shadow {
   text-shadow: 4px 4px #ffbc34;
 }
 
-/*span.white-bg {
-  background: white;
-}*/
-
+// Underline styles
 .underline-custom {
   text-decoration: underline;
   text-decoration-color: $highlight;
 }
 
+// Media Queries
 h2.display-4.intro {
   padding-top: 30px;
   font-weight: 400;
   margin-bottom: 20px;
 
   @include desktop-up {
-    //line-height: 6.5rem !important;
     font-size: 2.6rem;
   }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    //line-height: 3.2rem !important;
-  }
-
-  @media (min-width: 576px) and (max-width: 767px) {
-    //line-height: 2.5rem !important;
-  }
-
-  @include bs-mobile {
-    //font-size: 28px;
-    //line-height: 2rem !important;
-  }
 }
 
-.d-flex {
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
+// Images
 img.cover-image {
   width: 500px;
   clip-path: circle(50%);
@@ -179,6 +148,7 @@ img.cover-image {
   }
 }
 
+// Containers
 .col-md-6.d-flex.cover-image {
   @media (max-width: 767px) {
     justify-content: center;
@@ -206,9 +176,11 @@ div.card {
   }
 }
 
+// Other styles
 .usp-three-col {
   margin-top: 40px;
 }
+
 .drop-cap {
   font-size: 2rem;
   font-weight: bold;

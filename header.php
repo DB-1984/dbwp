@@ -12,17 +12,6 @@
 <body>
   <header>
     <div class="header-nav">
-      <div class="logo">
-        <a href="/" class="logo-link">
-          <p class="logo-text">]}</span></p>
-        </a>
-      </div>
-      <!--div class="menu-items">
-        <ul>
-          <li><a class="nav-link" href="#">Item one</a></li>
-          <li><a class="nav-link" href="#">Item two</a></li>
-        </ul>
-      </div-->
       <div id="menu-icon-shape">
         <div id="menu-icon">
           <div id="top"></div>
@@ -30,7 +19,18 @@
           <div id="bottom"></div>
         </div>
       </div>
+      <div class="logo">
+        <a href="/" class="logo-link">
+          <p class="logo-text">]}</span></p>
+        </a>
+      </div>
+      <div class="some-button">
+        <a href="/" class="logo-link">
+          <p class="logo-text">Button</span></p>
+        </a>
+      </div>
     </div>
+
 
     <!-- Overlay menu -->
     <div id="overlay-nav">
