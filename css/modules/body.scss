@@ -11,8 +11,9 @@ $dark-gray: #303030;
 body {
   font-family: "Manrope", sans-serif !important;
   font-weight: 400;
-  background: $accent !important;
+  background: #dcdcdc !important;
   color: $accent !important;
+  overflow-x: hidden;
 
   &.modal-open {
     overflow: hidden;
@@ -47,7 +48,7 @@ a.btn.btn-primary.cta:active {
 // Logo Text
 p.logo-text {
   margin-bottom: 0px;
-  color: #e5e5e5;
+  color: #343434;
   font-size: 45px;
   font-family: "Black Ops One", sans-serif;
   letter-spacing: -10px;
@@ -98,7 +99,7 @@ h2.display-4 {
 }
 
 h1.display-5 {
-  font-weight: 700 !important;
+  font-weight: 900 !important;
   color: #e5e5e5;
 
   &.usp {
@@ -107,10 +108,12 @@ h1.display-5 {
 }
 
 h1.display-4 {
-  font-weight: 700;
-  color: #e5e5e5;
+  font-weight: 900;
+  color: #0c0e0d;
   line-height: 5rem;
+  text-align: left;
   z-index: 5;
+  padding-left: 10% !important;
 }
 
 span.text-shadow {

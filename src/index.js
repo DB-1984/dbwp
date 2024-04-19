@@ -8,30 +8,28 @@ import StorageCookiePopup from "./modules/storageCookie";
 import MenuOverlayShow from "./modules/menuOverlay";
 import StickyEls from "./modules/stickyEls";
 import FormHandler from "./modules/formHandler";
-//import { initializeTyped, initializeTypedBlog } from "./modules/typed";
+import { initializeTyped, initializeTypedBlog } from "./modules/typed";
 
-//const menuOverlayShow = new MenuOverlayShow();
+const menuOverlayShow = new MenuOverlayShow();
 const storageCookie = new StorageCookiePopup();
-//const stickyEls = new StickyEls();
+const stickyEls = new StickyEls();
 const formHandler = new FormHandler();
 
 AOS.init();
 searchAPI();
 
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const grid = document.querySelector("#masonry-layout");
   if (grid) {
     const masonry = new Masonry(grid, {
       itemSelector: ".masonry-item",
     });
   }
-});*/
+});
 
-/*
 document.addEventListener("DOMContentLoaded", function () {
   initializeTyped();
 });
 document.addEventListener("DOMContentLoaded", function () {
   initializeTypedBlog();
 });
-*/

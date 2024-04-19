@@ -4,6 +4,12 @@
   }
 }
 
+@mixin above-bs-mobile {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
 @mixin small-mobile-up {
   @media (min-width: 400px) {
     @content;
@@ -42,6 +48,12 @@
 
 @mixin below-desktop {
   @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin below-tablet {
+  @media (max-width: 767px) {
     @content;
   }
 }

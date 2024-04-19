@@ -85,8 +85,8 @@ hr.above-d4 {
 
 @media (min-width: 576px) {
   h1.display-4 {
-    font-size: 10vh !important;
-    line-height: 10vh !important;
+    font-size: 8vw !important;
+    line-height: 7vw !important;
   }
   .front-page {
     padding-top: 20vh !important;
@@ -164,18 +164,23 @@ div#latest-posts {
   margin-bottom: 50px;
 }
 
-.border-left-h1 {
+.left-h1 {
   font-size: 10vh !important;
   line-height: 10vh !important;
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
   border-left: 15px solid black;
-  text-align: left;
+  text-align: center;
+  top: 50%;
   padding-left: 10px;
-  position: relative;
+  position: absolute;
   padding: 30px;
   background: #00000042;
   z-index: 2;
+
+  @include below-tablet {
+    left: 0;
+  }
 }
 
 .mntn {
