@@ -5,14 +5,9 @@
   <div class="row">
     <!-- Column 1 -->
     <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-      <div class="p-3 text-center">
+      <div class="p-3">
         <h1 class="display-4 typed-js">
         </h1>
-      </div>
-    </div>
-    <!-- Column 2 -->
-    <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-      <div class="p-3">
         <div class="border-left-h1">
           <p class="lead"><span style="color: #303030; font-weight: 600">DBWP.PRO | </span>WordPress/WooCommerce site
             creation & technical support, with no surprises.</p>
@@ -20,6 +15,12 @@
             Start here
           </button>
         </div>
+      </div>
+    </div>
+    <!-- Column 2 -->
+    <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
+      <div class="p-3">
+
         <img class="img-fluid" data-aos="fade-up" src="<?php echo get_theme_file_uri('assets/mntn.png'); ?>" alt="Hero Image">
       </div>
     </div>

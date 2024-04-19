@@ -113,7 +113,15 @@ h1.display-4 {
   line-height: 5rem;
   text-align: left;
   z-index: 5;
-  padding-left: 10% !important;
+  //padding-left: 10% !important;
+  @include below-tablet {
+    font-size: 15vw;
+    line-height: 14vw;
+  }
+  @include above-tablet {
+    font-size: 8vw;
+    line-height: 7vw;
+  }
 }
 
 span.text-shadow {

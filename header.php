@@ -12,13 +12,6 @@
 <body>
   <header>
     <div class="header-nav">
-      <div id="menu-icon-shape">
-        <div id="menu-icon">
-          <div id="top"></div>
-          <div id="middle"></div>
-          <div id="bottom"></div>
-        </div>
-      </div>
       <div class="logo">
         <a href="/" class="logo-link">
           <p class="logo-text">]}</span></p>
@@ -26,6 +19,13 @@
       </div>
       <div class="some-button">
         <p id="contact-link">Button</span></p>
+      </div>
+      <div id="menu-icon-shape">
+        <div id="menu-icon">
+          <div id="top"></div>
+          <div id="middle"></div>
+          <div id="bottom"></div>
+        </div>
       </div>
     </div>
 

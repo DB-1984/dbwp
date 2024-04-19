@@ -11,6 +11,11 @@
   }
 }
 
+.border-left-h1 {
+  z-index: 3;
+  width: 100%;
+}
+
 hr.above-d4 {
   border: none;
   background-color: #ededed !important;
@@ -64,10 +69,10 @@ hr.above-d4 {
 }
 
 @media (max-width: 575px) {
-  h1.display-4 {
+  /*h1.display-4 {
     font-size: 12vw !important;
     line-height: 12vw !important;
-  }
+  }*/
 
   .front-page-img {
     padding-top: 30px !important;
@@ -84,10 +89,10 @@ hr.above-d4 {
 }
 
 @media (min-width: 576px) {
-  h1.display-4 {
+  /*h1.display-4 {
     font-size: 8vw !important;
     line-height: 7vw !important;
-  }
+  }*/
   .front-page {
     padding-top: 20vh !important;
     padding-bottom: 17vh !important;
@@ -192,10 +197,11 @@ div#latest-posts {
   }
   .lead {
     margin-top: 0;
-    max-width: 600px;
     margin-bottom: 1rem;
+    text-align: left;
     line-height: initial;
     color: #e5e5e5;
+    font-size: 1rem !important;
     font-weight: 500;
     //background: #e5e5e5ba !important;
     padding: 5px;
