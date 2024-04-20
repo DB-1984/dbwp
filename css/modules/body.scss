@@ -116,11 +116,17 @@ h1.display-4 {
   //padding-left: 10% !important;
   @include below-tablet {
     font-size: 15vw;
-    line-height: 14vw;
+    line-height: 13vw;
+    position: absolute;
+    top: 25%;
+    left: 5%;
   }
   @include above-tablet {
     font-size: 8vw;
     line-height: 7vw;
+    position: absolute;
+    top: 25%;
+    left: 25%;
   }
 }
 

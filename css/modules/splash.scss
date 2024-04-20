@@ -13,7 +13,9 @@
 
 .border-left-h1 {
   z-index: 3;
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
 }
 
 hr.above-d4 {
@@ -169,6 +171,16 @@ div#latest-posts {
   margin-bottom: 50px;
 }
 
+.splash-text {
+  z-index: 3;
+}
+
+.wp-icon {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
 .left-h1 {
   font-size: 10vh !important;
   line-height: 10vh !important;
@@ -189,12 +201,9 @@ div#latest-posts {
 }
 
 .mntn {
-  @include bs-mobile {
-    margin-top: 40vw;
-  }
-  @media (min-width: 576px) {
-    margin-top: 20vh;
-  }
+  margin-bottom: 4rem;
+  position: relative;
+
   .lead {
     margin-top: 0;
     margin-bottom: 1rem;

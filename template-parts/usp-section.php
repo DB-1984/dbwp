@@ -50,15 +50,11 @@
     <div class="col-10 col-sm-8 col-lg-6 steps" data-aos="fade-right">
     </div>
     <div class="col-lg-6" data-aos="fade-down">
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <img src="<?php echo get_theme_file_uri('assets\wpwc.png'); ?>" class="d-block img-fluid" alt="" width="200"
-          height="auto" loading="lazy" style="mix-blend-mode: difference">
-      </div>
+
       <h1 class="display-5 fw-bold mb-3">WooCommerce & WordPress Site Design & Support</h1>
       <ol class="list-group list-group usp-list" style="margin-top: 30px">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-          <span class="badge bg-primary rounded-pill"
-            style="background: transparent !important; color: black !important">Contact</span>
+          <span class="badge bg-primary rounded-pill" style="background: transparent !important; color: black !important">Contact</span>
           <div class="ms-2 me-auto">
             <div class="fw-bold">1. Reach out</div>
             Get in touch using our contact form, and <span class="text-highlight">let us know what we can help you
@@ -66,8 +62,7 @@
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
-          <span class="badge bg-primary rounded-pill"
-            style="background: transparent !important; color: black !important">Discuss</span>
+          <span class="badge bg-primary rounded-pill" style="background: transparent !important; color: black !important">Discuss</span>
           <div class="ms-2 me-auto">
             <div class="fw-bold">2. Work things out</div>
             We'll assess the situation (we might need some access to your
@@ -77,8 +72,7 @@
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
-          <span class="badge bg-primary rounded-pill"
-            style="background: transparent !important; color: black !important">Execute</span>
+          <span class="badge bg-primary rounded-pill" style="background: transparent !important; color: black !important">Execute</span>
           <div class="ms-2 me-auto">
             <div class="fw-bold">3. Sort things out</div>
             We'll ask for a 50% deposit in advance of the work, with the

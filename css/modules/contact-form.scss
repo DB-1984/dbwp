@@ -119,25 +119,12 @@ textarea#message:focus,
     padding-left: 0px !important;
   }
 }
-.rocks {
-  background: url("/assets/splash.png") no-repeat;
-  @include below-desktop {
-    background-size: contain;
-    background-position: center;
-  }
-  @include desktop-up {
-    background-size: auto;
-    min-height: 500px;
-  }
-  display: flex;
-  align-items: center !important;
-}
 
-.water-bg {
+/*.water-bg {
   background: url("/assets/splash.png") no-repeat;
   background-size: contain !important;
   background-position: center !important;
-}
+}*/
 
 .col-lg-6.left-form {
   background: #ffffffc4;
