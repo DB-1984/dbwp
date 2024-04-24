@@ -210,7 +210,10 @@ p#contact-link {
   top: 0px;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  @include below-tablet {
+    justify-content: space-between;
+  }
   z-index: 1001;
   align-items: center;
   transition: height 0.3s ease;

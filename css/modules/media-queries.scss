@@ -4,6 +4,12 @@
   }
 }
 
+@mixin big-screens {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
 @mixin above-bs-mobile {
   @media (min-width: 576px) {
     @content;

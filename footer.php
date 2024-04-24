@@ -126,20 +126,11 @@
   </div>
 
   <script>
-    const anchorLink = document.querySelector("#usp-anchor");
-    const anchorTarget = document.querySelector("#usp-anchor-top");
+    const anchorLink = document.querySelector("#contact-link");
+    const anchorTarget = document.querySelector("#contact_form_top");
     if (anchorTarget) {
       anchorLink.addEventListener("click", () => {
         anchorTarget.scrollIntoView({
-          behavior: "smooth"
-        });
-      });
-    }
-    const anchorLink2 = document.querySelector("#contact-link");
-    const anchorTarget2 = document.querySelector("#contact_form_top");
-    if (anchorTarget) {
-      anchorLink2.addEventListener("click", () => {
-        anchorTarget2.scrollIntoView({
           behavior: "smooth"
         });
       });

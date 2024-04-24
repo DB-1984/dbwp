@@ -12,6 +12,11 @@
 <body>
   <header>
     <div class="header-nav">
+      <div class="logo">
+        <a href="/" class="logo-link">
+          <p class="logo-text">]}</span></p>
+        </a>
+      </div>
       <div id="menu-icon-shape">
         <div id="menu-icon">
           <div id="top"></div>
@@ -19,14 +24,11 @@
           <div id="bottom"></div>
         </div>
       </div>
-      <div class="logo">
-        <a href="/" class="logo-link">
-          <p class="logo-text">]}</span></p>
-        </a>
-      </div>
+      <!--
       <div class="some-button">
         <p id="contact-link">Button</span></p>
       </div>
+      -->
     </div>
 
 
