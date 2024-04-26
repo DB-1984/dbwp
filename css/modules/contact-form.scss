@@ -1,8 +1,8 @@
-.contact-container {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  //background: var(--bg-color);
+.c-form-bg {
+  margin-bottom: 5rem;
+  background: url("/assets/splash.png") no-repeat;
+  background-size: contain !important;
+  background-position: center !important;
 }
 
 .left-col {

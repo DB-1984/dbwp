@@ -104,7 +104,7 @@ h2.display-4 {
 
 h1.display-5 {
   font-weight: 900 !important;
-  color: #e5e5e5;
+  color: #07181b;
 
   &.usp {
     color: $dark-gray !important;
@@ -117,6 +117,7 @@ h1.display-4 {
   line-height: 5rem;
   text-align: left;
   z-index: 5;
+  text-shadow: 7px 7px 0px #dddddd;
   position: absolute;
   top: 25%;
   left: 5%;

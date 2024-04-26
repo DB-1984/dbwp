@@ -1,4 +1,4 @@
-<div class="container-fluid px-4 water-bg" id="contact_form_top">
+<div class="container c-form-bg" id="contact_form_top">
     <div class="row align-items-center g-5">
         <!-- Centered Column for Form -->
         <div class="col-lg-8 mx-auto" data-aos="fade-up" style="z-index: 1; padding: 20px; border-radius: 0.375rem; padding-top:50px; padding-bottom: 50px">
