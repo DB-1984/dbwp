@@ -1,8 +1,8 @@
-<div class="container-fluid px-4 water-bg" id="contact_form_top">
+<div class="container-fluid px-4 contact-form-main" id="contact_form_top">
     <div class="container inner-form" style="margin-bottom: 6rem">
         <div class="row align-items-center g-5">
             <!-- Centered Column for Form -->
-            <div class="col-lg-8 mx-auto shadow-lg" data-aos="fade-up" style="z-index: 1; background-color: #ffffffc9; padding: 20px; border-radius: 0.375rem; padding-top:50px; padding-bottom: 50px">
+            <div class="col-lg-12 mx-auto" data-aos="fade-up">
                 <h1 class="display-5" style="color: #303030" data-aos="fade-in" style="margin-bottom: 40px">
                     Contact >>>
                 </h1></br>
