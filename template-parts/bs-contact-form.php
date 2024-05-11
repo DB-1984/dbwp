@@ -1,17 +1,20 @@
 <div class="container-fluid px-4 contact-form-main" id="contact_form_top">
     <div class="container inner-form" style="margin-bottom: 6rem">
         <div class="row align-items-center g-5">
-            <!-- Centered Column for Form -->
-            <div class="col-lg-12 mx-auto" data-aos="fade-up">
-                <h1 class="display-5" style="color: #303030" data-aos="fade-in" style="margin-bottom: 40px">
+            <!-- Column for Image -->
+            <div class="col-md-6 rocks-image" data-aos="fade-right">
+                <img src="<?php echo get_theme_file_uri('assets\rocks.jpeg'); ?>" alt="Descriptive Alt Text" +>
+            </div>
+
+            <!-- Column for Form -->
+            <div class="col-md-6 form-actual" data-aos="fade-left">
+                <h1 class="display-5" style="color: #303030; margin-bottom: 40px;">
                     Contact >>>
-                </h1></br>
+                </h1>
                 <h3 class="cform">
-                    Reach out to us using our contact form, and we'll respond typically <span class="text-highlight">within
-                        48 hours.</span></h3> <br>
-                <p class="cform">The <strong>more detail you can provide</strong>, the
-                    better-informed
-                    we are to make an <strong>initial assessment</strong>.</p></br></br>
+                    Reach out to us using our contact form, and we'll respond typically <span class="text-highlight">within 48 hours.</span>
+                </h3> <br>
+                <p class="cform">The <strong>more detail you can provide</strong>, the better-informed we are to make an <strong>initial assessment</strong>.</p><br>
                 <form class="needs-validation" id="contact_form" novalidate>
                     <!-- First Name -->
                     <div class="form-row">
@@ -57,8 +60,7 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <button class="btn btn-primary btn-lg px-4 me-md-2 fw-bold cta" type="submit" id="submit">Submit
-                        form
+                    <button class="btn btn-primary btn-lg px-4 me-md-2 fw-bold cta" type="submit" id="submit">Submit form
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
                 </form>

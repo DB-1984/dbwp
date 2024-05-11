@@ -19,6 +19,20 @@
   padding: 5rem 3.5rem;
 }
 
+.form-actual {
+  background: #fff;
+  padding: 30px;
+}
+
+.rocks-image {
+  @include max-tablet {
+    margin-bottom: -20vw;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
 /*#background-video {
   position: absolute;
   top: 0;
@@ -31,7 +45,7 @@
 #contact_form_top {
   position: relative;
   overflow: hidden;
-  background: white;
+  //background: white;
   padding-top: 75px;
   margin-bottom: 75px;
   //margin-top: 2rem;
