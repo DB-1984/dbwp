@@ -24,9 +24,9 @@
   padding: 30px;
 }
 
-.rocks-image {
+.water-image {
   @include max-tablet {
-    margin-bottom: -20vw;
+    margin-bottom: -40vw;
     img {
       max-width: 100%;
     }
@@ -45,13 +45,8 @@
 #contact_form_top {
   position: relative;
   overflow: hidden;
-  //background: white;
   padding-top: 75px;
   margin-bottom: 75px;
-  //margin-top: 2rem;
-  //padding: 8rem !important;
-  //background-color: white;
-  //margin-bottom: 50px;
 
   input,
   textarea,
@@ -137,7 +132,7 @@ textarea#message:focus,
   }
 }
 .rocks {
-  background: url("/assets/splash.png") no-repeat;
+  //background: url("/assets/splash.png") no-repeat;
   @include below-desktop {
     background-size: contain;
     background-position: center;
@@ -151,7 +146,7 @@ textarea#message:focus,
 }
 
 .water-bg {
-  background: url("/assets/splash.png") no-repeat;
+  //background: url("/assets/splash.png") no-repeat;
   background-size: contain !important;
   background-position: center !important;
 }

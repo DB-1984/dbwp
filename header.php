@@ -25,9 +25,7 @@
         </a>
       </div>
       <div class="some-button">
-        <a href="/" class="logo-link">
-          <p class="logo-text">Button</span></p>
-        </a>
+        <span id="contact-link-text"><i class="fa-regular fa-circle-play"></i></span>
       </div>
     </div>
 

@@ -2,8 +2,8 @@
     <div class="container inner-form" style="margin-bottom: 6rem">
         <div class="row align-items-center g-5">
             <!-- Column for Image -->
-            <div class="col-md-6 rocks-image" data-aos="fade-right">
-                <img src="<?php echo get_theme_file_uri('assets\rocks.jpeg'); ?>" alt="Descriptive Alt Text" +>
+            <div class="col-md-6 water-image" data-aos="fade-right">
+                <img src="<?php echo get_theme_file_uri("assets\water.png"); ?>" alt="Descriptive Alt Text" +>
             </div>
 
             <!-- Column for Form -->

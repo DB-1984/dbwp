@@ -121,8 +121,7 @@
 
   <!-- Popup HTML -->
   <div id="popup-container" style="display: none">
-    <p>By proceeding through this website, you accept the terms of our <span class="text-highlight"><a
-          href="privacy-policy.html">Privacy Policy</a></span></p>
+    <p>By proceeding through this website, you accept the terms of our <span class="text-highlight"><a href="privacy-policy.html">Privacy Policy</a></span></p>
     <button id="close-btn">Close</button>
   </div>
 
@@ -132,6 +131,15 @@
     if (anchorTarget) {
       anchorLink.addEventListener("click", () => {
         anchorTarget.scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    }
+    const anchorLink2 = document.querySelector("#contact-link-text");
+    const anchorTarget2 = document.querySelector("#contact_form_top");
+    if (anchorTarget) {
+      anchorLink2.addEventListener("click", () => {
+        anchorTarget2.scrollIntoView({
           behavior: "smooth"
         });
       });
