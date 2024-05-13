@@ -1,6 +1,7 @@
 class MenuOverlayShow {
   constructor() {
     this.menuIconShape = document.getElementById("menu-icon-shape");
+    this.formIcon = document.querySelector("#contact-link-text > i");
     this.topMiddleBottom = document.querySelectorAll("#top, #middle, #bottom");
     this.overlayNav = document.querySelector("#overlay-nav");
     this.menuIconShape.addEventListener("click", () => {
@@ -33,6 +34,7 @@ class MenuOverlayShow {
       element.classList.toggle("active")
     );
     this.overlayNav.classList.toggle("active");
+    this.formIcon.classList.toggle("active");
   }
 
   escKeyClose(e) {

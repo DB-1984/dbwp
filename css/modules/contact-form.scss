@@ -20,13 +20,13 @@
 }
 
 .form-actual {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8705882353) !important;
   padding: 30px;
 }
 
-.water-image {
+.frm-image {
   @include max-tablet {
-    margin-bottom: -40vw;
+    margin-bottom: -25vw;
     img {
       max-width: 100%;
     }
@@ -45,8 +45,10 @@
 #contact_form_top {
   position: relative;
   overflow: hidden;
+  background: #fff;
   padding-top: 75px;
   margin-bottom: 75px;
+  background: url("/assets/me.jpeg") no-repeat center;
 
   input,
   textarea,

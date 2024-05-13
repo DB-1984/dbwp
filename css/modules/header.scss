@@ -38,7 +38,13 @@
 
 span#contact-link-text {
   i {
-    font-size: 30px;
+    font-size: 35px;
+    &.active {
+      color: #333;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -52,14 +58,6 @@ span#contact-link-text {
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-
-  &:hover {
-    background: #bcbcbc;
-  }
-
-  &.active {
-    background: #bcbcbc;
-  }
 }
 
 #menu-icon {
@@ -89,6 +87,7 @@ span#contact-link-text {
 #top.active {
   -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
   transform: translateY(8px) translateX(0) rotate(45deg);
+  background: #333;
 }
 
 #middle.active {
@@ -98,6 +97,7 @@ span#contact-link-text {
 #bottom.active {
   -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
   transform: translateY(-8px) translateX(0) rotate(-45deg);
+  background: #333;
 }
 
 #overlay-nav {

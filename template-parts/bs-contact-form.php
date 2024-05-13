@@ -1,13 +1,8 @@
 <div class="container-fluid px-4 contact-form-main" id="contact_form_top">
     <div class="container inner-form" style="margin-bottom: 6rem">
         <div class="row align-items-center g-5">
-            <!-- Column for Image -->
-            <div class="col-md-6 water-image" data-aos="fade-right">
-                <img src="<?php echo get_theme_file_uri("assets\water.png"); ?>" alt="Descriptive Alt Text" +>
-            </div>
-
             <!-- Column for Form -->
-            <div class="col-md-6 form-actual" data-aos="fade-left">
+            <div class="col-md-12 rounded form-actual" data-aos="fade-left">
                 <h1 class="display-5" style="color: #303030; margin-bottom: 40px;">
                     Contact >>>
                 </h1>
