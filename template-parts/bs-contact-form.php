@@ -1,15 +1,16 @@
 <div class="container-fluid px-4 contact-form-main" id="contact_form_top">
     <div class="container inner-form" style="margin-bottom: 6rem">
-        <div class="row align-items-center g-5">
-            <!-- Column for Form -->
-            <div class="col-md-12 rounded form-actual" data-aos="fade-left">
+        <div class="row justify-content-center">
+            <div class="col-md-8 px-md-5 rounded form-actual" data-aos="fade-left">
                 <h1 class="display-5" style="color: #303030; margin-bottom: 40px;">
-                    Contact >>>
+                    Contact &gt;&gt;&gt;
                 </h1>
                 <h3 class="cform">
                     Reach out to us using our contact form, and we'll respond typically <span class="text-highlight">within 48 hours.</span>
-                </h3> <br>
-                <p class="cform">The <strong>more detail you can provide</strong>, the better-informed we are to make an <strong>initial assessment</strong>.</p><br>
+                </h3>
+                <br>
+                <p class="cform">The <strong>more detail you can provide</strong>, the better-informed we are to make an <strong>initial assessment</strong>.</p>
+                <br>
                 <form class="needs-validation" id="contact_form" novalidate>
                     <!-- First Name -->
                     <div class="form-row">
