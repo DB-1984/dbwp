@@ -41,7 +41,7 @@
             <form method="get" id="searchform" action="">
               <input type="text" value="" placeholder="Search..." id="search-input">
             </form>
-            <div id="results-container" style="height: 200px; overflow-y: auto; display: inline-block">
+            <div id="results-container">
             </div>
           </div>
       </div>

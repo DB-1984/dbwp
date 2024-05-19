@@ -154,6 +154,12 @@ a#mk-fullscreen-close-button {
 
 div#results-container {
   padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .result {
