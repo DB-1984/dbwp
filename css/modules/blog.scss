@@ -70,9 +70,16 @@ div.card {
 }
 
 a#latest-post-link {
-  color: #303030 !important;
+  color: #fff !important;
+  text-decoration: none !important;
   transition: color 0.3s ease-in;
   &:hover {
-    color: #7e7e7e !important;
+    color: #ddd !important;
+  }
+  &:after {
+    content: "\f0c1";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 0.5em;
   }
 }

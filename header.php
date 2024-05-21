@@ -25,7 +25,7 @@
         </a>
       </div>
       <div class="some-button">
-        <span id="contact-link-text"><i class="fa-regular fa-circle-play"></i></span>
+        <span id="contact-link-text"><i class="fa-solid fa-forward-step"></i></span>
       </div>
     </div>
 

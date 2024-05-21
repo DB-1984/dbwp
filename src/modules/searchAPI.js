@@ -1,15 +1,16 @@
 function searchAPI() {
-  var searchField = document.querySelector("#search-input");
-  var resultsContainer = document.querySelector("#results-container");
-  var typingTimer;
-  var doneTypingInterval = 500;
-
-  searchField.focus();
+  const searchField = document.querySelector("#search-input");
+  const resultsContainer = document.querySelector("#results-container");
+  let typingTimer;
+  let doneTypingInterval = 500;
 
   searchField.addEventListener("keyup", function () {
+    // reset starting point for timeout each time typing occurs (debounce)
     clearTimeout(typingTimer);
+    // the main search process, with a callback for the timeout
     typingTimer = setTimeout(function () {
-      var searchQuery = searchField.value.trim();
+      // trim whitespace from search contents
+      let searchQuery = searchField.value.trim();
 
       if (searchQuery === "") {
         resultsContainer.innerHTML = "";
