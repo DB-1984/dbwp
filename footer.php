@@ -111,7 +111,7 @@
   <!-- Copyright -->
 
   <div class="container-fluid copyright" style="padding-left: 0; padding-right: 0">
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    <div class="text-center p-4">
       &copy;
       <?php echo date_i18n('Y'); ?> DBWP.pro
     </div>

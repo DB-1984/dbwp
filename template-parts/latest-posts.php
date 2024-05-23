@@ -20,7 +20,7 @@
                             <div class="row no-gutters">
                                 <div class="col-md-12">
                                     <div class="card-body">
-                                        <h4 class="display-8"><a href=" <?php the_permalink(); ?>" id="latest-post-link"><?php the_title(); ?></a></h4>
+                                        <h4 class="display-8"><a href=" <?php the_permalink(); ?>" id="latest-post-link"><?php the_title(); ?></a> <i class="fa-solid fa-up-right-from-square" style="color: #fff"></i></h4>
                                     </div>
                                 </div>
                             </div>

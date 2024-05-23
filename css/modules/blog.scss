@@ -71,15 +71,9 @@ div.card {
 
 a#latest-post-link {
   color: #fff !important;
-  text-decoration: none !important;
   transition: color 0.3s ease-in;
+  text-decoration: none;
   &:hover {
-    color: #ddd !important;
-  }
-  &:after {
-    content: "\f0c1";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    margin-left: 0.5em;
+    text-decoration: underline;
   }
 }

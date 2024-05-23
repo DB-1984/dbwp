@@ -20,7 +20,7 @@
 }
 
 .form-actual {
-  background: rgb(255 255 255);
+  background: #212121;
   padding: 30px;
 }
 
@@ -32,15 +32,6 @@
     }
   }
 }
-
-/*#background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-}*/
 
 #contact_form_top {
   position: relative;
@@ -60,7 +51,7 @@
   label {
     font-size: 0.9rem;
     //text-transform: uppercase;
-    color: #343739;
+    color: #fff;
     font-weight: 600;
     padding-bottom: 15px;
   }
@@ -116,11 +107,12 @@
 
 button#submit {
   background: transparent;
-  border: 4px solid black;
-  color: black;
+  border: 4px solid #fff;
+  color: #fff;
   &:hover {
-    color: #ededed !important;
-    border: 4px solid #303030 !important;
+    color: #212121 !important;
+    background: #ededed !important;
+    border: 4px solid #ededed !important;
   }
 }
 

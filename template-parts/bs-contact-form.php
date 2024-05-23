@@ -4,7 +4,7 @@
             <div class="col-md-8 px-md-5 form-actual" data-aos="fade-left">
 
                 <h3 class="cform">
-                    Reach out to us using our contact form, and we'll respond typically <span class="text-highlight">within 48 hours.</span>
+                    Reach out to us using our contact form, and we'll respond <strong>typically within 48 hours.</strong>
                 </h3>
                 <br>
                 <p class="cform">The <strong>more detail you can provide</strong>, the better-informed we are to make an <strong>initial assessment</strong>.</p>
