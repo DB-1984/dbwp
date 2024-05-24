@@ -1,14 +1,20 @@
 <?php get_header(); ?>
 
 <body <?php body_class(); ?>>
-
-    <div class="container" style="position: relative;" data-aos="fade-down">
-        <div class="blog-header" style="background: url('<?php echo get_theme_file_uri('assets/dbwp-logo.png'); ?>') center/contain no-repeat; height: 300px;">
-            <h1 class="display-4 blog-title text-white typed-js-index" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);padding-bottom: 50px">
-            </h1>
+    <div class="container blog-home" style="position: relative;" data-aos="fade-down">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src='<?php echo get_theme_file_uri('assets/dbwp-logo.png'); ?>' class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <h1 class="display-1 blog-title text-white typed-js-index">
+                </h1>
+            </div>
         </div>
     </div>
-    <div class="container-fluid">
+
+    <div class="container-fluid post-cards blog-img-container">
+        <div class="blog-img-overlay"></div>
         <div class="row">
             <?php if (have_posts()) :
                 while (have_posts()) :

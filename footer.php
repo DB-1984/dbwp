@@ -154,7 +154,7 @@
 
     menuDiv.addEventListener('mouseover', () => {
       menuShapes.forEach(shape => {
-        shape.style.backgroundColor = '#467c88';
+        shape.style.backgroundColor = '#b7b7b7';
       });
     });
 

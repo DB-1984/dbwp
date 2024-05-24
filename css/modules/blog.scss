@@ -2,11 +2,11 @@
 @import "body";
 
 .blog-title {
-  margin-top: 175px !important;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  //margin-top: 175px !important;
+  position: relative;
+  //bottom: 20px;
+  //left: 50%;
+  //transform: translateX(-50%);
   color: white; /* Set the text color to white or any other color you prefer */
 }
 
@@ -25,6 +25,10 @@ h1.blog-title {
   @include small-mobile-down {
     font-size: 3.6rem;
   }
+}
+
+.post-cards {
+  margin-top: 50px;
 }
 
 p.blog-intro {
@@ -53,6 +57,10 @@ p.blog-intro {
   margin: 150px 0 100px;
 }
 
+.blog-home {
+  margin-top: 120px;
+}
+
 div.card {
   border: none !important;
   background: #e5e5e5 !important;
@@ -76,4 +84,30 @@ a#latest-post-link {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.blog-img-container {
+  position: relative;
+  padding: 30px;
+}
+
+.blog-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/qr.png") repeat center;
+  background-size: cover;
+  opacity: 0.5; /* Adjust the opacity value as needed */
+  z-index: 1;
+}
+
+.blog-img-container blog-img {
+  position: relative;
+  z-index: 2;
+}
+
+.col-md-4.masonry-item.aos-init {
+  z-index: 2;
 }

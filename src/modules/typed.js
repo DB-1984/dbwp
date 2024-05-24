@@ -22,8 +22,8 @@ export function initializeTyped() {
 }
 
 const optionsBlog = {
-  strings: ["Welcome to the blog..."],
-  typeSpeed: 25,
+  strings: ["The blog..."],
+  typeSpeed: 20,
   backSpeed: 30,
   startDelay: 500,
   backDelay: 1500,
