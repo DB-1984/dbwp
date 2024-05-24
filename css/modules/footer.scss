@@ -5,6 +5,18 @@ section.footer-link-section {
   display: none;
 }
 
+.scroll-top {
+  color: #212121;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px;
+  background: #fff;
+}
+
 .text-center.p-4 {
   background-color: #212121 !important;
   color: white !important;

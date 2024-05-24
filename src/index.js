@@ -3,7 +3,7 @@ import AOS from "aos"; // animate on scroll package
 import "aos/dist/aos.css"; // AOS CSS
 //import Masonry from "masonry-layout";
 import Typed from "typed.js";
-import searchAPI from "./modules/searchAPI"; // Duh...
+import searchAPI from "./modules/searchAPIasync"; // Duh...
 import StorageCookiePopup from "./modules/storageCookie";
 import MenuOverlayShow from "./modules/menuOverlay";
 import StickyEls from "./modules/stickyEls";

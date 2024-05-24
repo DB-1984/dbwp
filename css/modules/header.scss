@@ -38,7 +38,7 @@
 
 span#contact-link-text {
   i {
-    font-size: 25px;
+    font-size: 30px;
     &.active {
       color: #333;
     }
@@ -58,6 +58,17 @@ span#contact-link-text {
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.some-button {
+  padding-top: 5px;
+}
+
+.some-button i {
+  transition: color 0.305s ease-in-out;
+  &:hover {
+    color: #467c88;
+  }
 }
 
 #menu-icon {

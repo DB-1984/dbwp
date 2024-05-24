@@ -1,32 +1,32 @@
 function searchAPI() {
+  // setup elements
   const searchField = document.querySelector("#search-input");
   const resultsContainer = document.querySelector("#results-container");
-  let debouncer;
-  const doneTypingInterval = 500;
+  let debouncer; // declare initial state for debouncer, used to delay requests
+  const doneTypingInterval = 500; // callback for timeout used for debouncer
 
   searchField.addEventListener("keyup", function () {
-    // reset typing interval
-    clearTimeout(debouncer);
+    clearTimeout(debouncer); // count to 500ms again
+    // the main search process, with a callback for the interval
 
-    // the main search process, with a callback for the timeout
     debouncer = setTimeout(async () => {
-      // trim whitespace from search contents
-      let searchQuery = searchField.value.trim();
+      // prevent overloading - async cues up promise
+      let searchQuery = searchField.value.trim(); // trim whitespace from search contents
 
       if (searchQuery === "") {
         resultsContainer.innerHTML = "";
-        return;
+        return; // if no contents, empty DIV
       }
 
       try {
-        // Send an array of fetch requests
+        // error-handling
+        // destructure from promise resolution of fetch **responses**
         const [postResponse, pageResponse] = await Promise.all([
           fetch("/wp-json/wp/v2/posts?search=" + searchQuery),
           fetch("/wp-json/wp/v2/pages?search=" + searchQuery),
         ]);
 
-        // Receives the response from both fetches as separate arrays
-        // Check if the response is OK, and get data if there is any; otherwise, use an empty array
+        // destructure from promise resolution of fetch **data**, with empty array as fallback
         const postData = postResponse.ok ? await postResponse.json() : [];
         const pageData = pageResponse.ok ? await pageResponse.json() : [];
 
