@@ -136,7 +136,7 @@ span#contact-link-text {
 
 #nav-content {
   position: relative;
-  top: 350px;
+  top: 55vh;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -232,7 +232,7 @@ span#contact-link-text {
     box-shadow: 2px 2px 10px #0000002e;
     background: #333333cc;
   }
-  &.modal-open {
+  &.active {
     background: #ededed;
     box-shadow: none;
   }

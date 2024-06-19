@@ -1,51 +1,59 @@
 class MenuOverlayShow {
   constructor() {
+    // Cache elements
     this.menuIconShape = document.getElementById("menu-icon-shape");
+    this.headerNav = document.querySelector(".header-nav");
     this.formIcon = document.querySelector("#contact-link-text > i");
     this.topMiddleBottom = document.querySelectorAll("#top, #middle, #bottom");
     this.overlayNav = document.querySelector("#overlay-nav");
-    this.menuIconShape.addEventListener("click", () => {
-      this.toggleMenu();
-      this.stopScroll();
-    });
+    this.bodyHeaderNav = document.querySelector(
+      "body > header > div.header-nav"
+    );
+    this.logoText = document.querySelector("div.logo > a > p");
 
-    document.addEventListener("keyup", (e) => this.escKeyClose(e));
+    // Bind event listeners
+    this.menuIconShape.addEventListener(
+      "click",
+      this.handleMenuClick.bind(this)
+    );
+    document.addEventListener("keyup", this.handleKeyUp.bind(this));
+  }
+
+  handleMenuClick() {
+    this.toggleMenu();
+    this.stopScroll();
+  }
+
+  handleKeyUp(e) {
+    if (e.key === "Escape" && this.overlayNav.classList.contains("active")) {
+      this.closeMenu();
+      this.stopScroll();
+    }
   }
 
   stopScroll() {
-    const navEls = [
-      document.querySelector("body > header > div.header-nav"),
-      document.querySelector("div.logo > a > p"),
-    ];
-
-    navEls.forEach((element) => {
-      if (element) {
-        element.classList.toggle(
-          "modal-open",
-          this.overlayNav.classList.contains("active")
-        );
-      }
-    });
+    const isActive = this.overlayNav.classList.contains("active");
+    this.bodyHeaderNav?.classList.toggle("modal-open", isActive);
+    this.logoText?.classList.toggle("modal-open", isActive);
   }
 
   toggleMenu() {
-    this.menuIconShape.classList.toggle("active");
-    this.topMiddleBottom.forEach((element) =>
-      element.classList.toggle("active")
-    );
-    this.overlayNav.classList.toggle("active");
-    this.formIcon.classList.toggle("active");
+    const isActive = !this.menuIconShape.classList.contains("active");
+    this.setMenuState(isActive);
   }
 
-  escKeyClose(e) {
-    if (this.overlayNav.classList.contains("active") && e.key === "Escape") {
-      this.overlayNav.classList.remove("active");
-      this.menuIconShape.classList.remove("active");
-      this.topMiddleBottom.forEach((element) =>
-        element.classList.remove("active")
-      );
-      this.stopScroll();
-    }
+  closeMenu() {
+    this.setMenuState(false);
+  }
+
+  setMenuState(isActive) {
+    this.menuIconShape.classList.toggle("active", isActive);
+    this.headerNav.classList.toggle("active", isActive);
+    this.topMiddleBottom.forEach((element) =>
+      element.classList.toggle("active", isActive)
+    );
+    this.overlayNav.classList.toggle("active", isActive);
+    this.formIcon.classList.toggle("active", isActive);
   }
 }
 

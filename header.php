@@ -24,11 +24,6 @@
           <p class="logo-text">]}</span></p>
         </a>
       </div>
-      <?php if (is_front_page()) : ?>
-        <div class="some-button">
-          <span id="contact-link-text"><i class="fa-regular fa-message"></i></span>
-        </div>
-      <?php endif; ?>
     </div>
 
 
