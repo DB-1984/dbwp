@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 
 <body <?php body_class(); ?>>
-    <div class="container blog-home" style="position: relative;" data-aos="fade-down">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <img src='<?php echo get_theme_file_uri('assets/dbwp-logo.png'); ?>' class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                <h1 class="display-1 blog-title text-white typed-js-index">
-                </h1>
+    <div class="container-fluid blog-home-parent">
+        <div class="container blog-home" style="position: relative;" data-aos="fade-down">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src='<?php echo get_theme_file_uri('assets/dbwp-logo.png'); ?>' class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 blog-title text-white typed-js-index">
+                    </h1>
+                </div>
             </div>
         </div>
     </div>

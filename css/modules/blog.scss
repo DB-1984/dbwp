@@ -14,8 +14,6 @@ h1.blog-title {
   font-weight: 800;
   padding: 20px;
   text-align: center;
-  font-size: 10vw !important;
-  line-height: 10vw !important;
 
   @include small-mobile-up {
     font-size: 5rem;
@@ -59,6 +57,13 @@ p.blog-intro {
 
 .blog-home {
   margin-top: 120px;
+  background: #21212196;
+  padding: 20px;
+}
+
+.blog-home-parent {
+  background: url("/assets/qr.png") repeat center;
+  background-size: contain;
 }
 
 div.card {
@@ -97,8 +102,8 @@ a#latest-post-link {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("/assets/qr.png") repeat center;
-  background-size: cover;
+  //background: url("/assets/qr.png") repeat center;
+  //background-size: cover;
   opacity: 0.5; /* Adjust the opacity value as needed */
   z-index: 1;
 }

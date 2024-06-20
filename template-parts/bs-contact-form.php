@@ -1,8 +1,7 @@
 <div class="container-fluid px-4 contact-form-main" id="contact_form_top">
     <div class="container inner-form" style="margin-bottom: 6rem">
         <div class="row justify-content-center">
-            <div class="col-md-8 px-md-5 form-actual" data-aos="fade-up">
-
+            <div class="col-md-8 form-actual" data-aos="fade-up">
                 <h3 class="cform">
                     Reach out to us using our contact form, and we'll respond <strong>typically within 48 hours.</strong>
                 </h3>
