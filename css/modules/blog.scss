@@ -2,22 +2,26 @@
 @import "body";
 
 .blog-title {
-  //margin-top: 175px !important;
   position: relative;
-  //bottom: 20px;
-  //left: 50%;
-  //transform: translateX(-50%);
-  color: white; /* Set the text color to white or any other color you prefer */
+  color: white; // Set the text color to white or any other color you prefer
+}
+
+.card-img,
+.card-img-top {
+  border-radius: 0 !important;
+}
+
+.card-body i {
+  color: #fff;
 }
 
 h1.blog-title {
   font-weight: 800;
   padding: 20px;
-  text-align: center;
 
   @include small-mobile-up {
     font-size: 5rem;
-    line-height: 4rem;
+    line-height: 4.5rem;
   }
 
   @include small-mobile-down {
@@ -37,12 +41,35 @@ p.blog-intro {
   font-size: 18px !important;
 }
 
+.btn.btn-primary.cta.blog-btn {
+  border-color: white !important;
+  color: white !important;
+
+  &:hover {
+    border-color: #333 !important;
+  }
+}
+
+.card-date {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #fff !important;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 0 auto 25px;
+  width: fit-content;
+}
+
 .blog {
-  h5.card-title,
-  .card-text,
-  .card-date {
-    color: #303030;
+  .card-text {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  h2.card-title {
     font-weight: 600;
+    color: #fff;
   }
 
   .cta {
@@ -57,7 +84,7 @@ p.blog-intro {
 
 .blog-home {
   margin-top: 120px;
-  background: #21212196;
+  background: #212121d4;
   padding: 20px;
 }
 
@@ -66,26 +93,19 @@ p.blog-intro {
   background-size: contain;
 }
 
-div.card {
+.blog-card {
   border: none !important;
-  background: #e5e5e5 !important;
-  padding: 10px;
+  background: #454545 !important;
+  padding: 30px;
+  color: #fff !important;
   margin: 5px;
-}
-
-.blog-btn {
-  color: #303030 !important;
-  &:hover {
-    background-color: transparent !important;
-    opacity: 1 !important;
-    border-color: #303030 !important;
-  }
 }
 
 a#latest-post-link {
   color: #fff !important;
   transition: color 0.3s ease-in;
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
@@ -102,13 +122,11 @@ a#latest-post-link {
   left: 0;
   width: 100%;
   height: 100%;
-  //background: url("/assets/qr.png") repeat center;
-  //background-size: cover;
-  opacity: 0.5; /* Adjust the opacity value as needed */
+  opacity: 0.5; // Adjust the opacity value as needed
   z-index: 1;
 }
 
-.blog-img-container blog-img {
+.blog-img-container .blog-img {
   position: relative;
   z-index: 2;
 }

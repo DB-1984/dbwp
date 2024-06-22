@@ -3,7 +3,6 @@
 // Variables
 $highlight: #1bb6e5;
 $accent: #fff;
-$hover: #ffbc34;
 $light-gray: #bcbcbc;
 $dark-gray: #303030;
 
@@ -26,7 +25,7 @@ body {
 
 // Links
 a {
-  color: $light-gray !important;
+  color: #828282 !important;
   transition: color 0.5s ease-in !important;
 
   &:active,
@@ -47,7 +46,7 @@ a.btn.btn-primary.cta:active {
 
 // Logo Text
 p.logo-text {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: #e5e5e5;
   font-size: 45px;
   font-family: "Black Ops One", sans-serif;
@@ -115,7 +114,7 @@ h1.display-4 {
 }
 
 span.text-shadow {
-  text-shadow: 4px 4px #ffbc34;
+  text-shadow: 4px 4px $highlight;
 }
 
 // Underline styles
@@ -159,7 +158,7 @@ img.cover-image {
 
 @media (min-width: 992px) {
   .row.cover-content {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 

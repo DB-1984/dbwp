@@ -13,6 +13,7 @@ function enqueue_contact_form_scripts()
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_contact_form_scripts');
+
 function contactForms($data)
 {
     // Check nonce

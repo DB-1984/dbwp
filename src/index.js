@@ -1,7 +1,7 @@
 import "../css/style.scss"; // scss for gulp
 import AOS from "aos"; // animate on scroll package
 import "aos/dist/aos.css"; // AOS CSS
-import Masonry from "masonry-layout";
+//import Masonry from "masonry-layout";
 import searchAPI from "./modules/searchAPIasync"; // Duh...
 import StorageCookiePopup from "./modules/storageCookie";
 import MenuOverlayShow from "./modules/menuOverlay";
@@ -17,14 +17,14 @@ const formHandler = new FormHandler();
 AOS.init();
 searchAPI();
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const grid = document.querySelector("#masonry-layout");
   if (grid) {
     const masonry = new Masonry(grid, {
       itemSelector: ".masonry-item",
     });
   }
-});
+});*/
 
 document.addEventListener("DOMContentLoaded", function () {
   initializeTyped();
