@@ -2,8 +2,14 @@ function searchAPI() {
   // setup elements
   const searchField = document.querySelector("#search-input");
   const resultsContainer = document.querySelector("#results-container");
+  const clearSearch = document.querySelector("#clear");
   let debouncer; // declare initial state for debouncer, used to delay requests
   const doneTypingInterval = 500; // callback for timeout used for debouncer
+
+  clearSearch.addEventListener("click", () => {
+    searchField.value = " ";
+    resultsContainer.innerHTML = "";
+  });
 
   searchField.addEventListener("keyup", function () {
     clearTimeout(debouncer); // count to 500ms again
@@ -56,7 +62,7 @@ function searchAPI() {
         // Check if there are no results for both posts and pages
         if (resultsContainer.innerHTML === "") {
           resultsContainer.innerHTML =
-            '<div class="no-results"><p>No results found</p></div>';
+            '<div class="no-results" style="display: block!important"><p>No results found</p></div>';
         }
       } catch (error) {
         console.error(error);
@@ -66,5 +72,4 @@ function searchAPI() {
     }, doneTypingInterval);
   });
 }
-
 export default searchAPI;

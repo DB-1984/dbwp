@@ -6,7 +6,7 @@
       <div class="hero text-light text-center py-5">
         <div class="border-left-h1">
           <h1 class="display-4 typed-js"></h1>
-          <p class="lead"><span style="color: #000; font-weight: 700">DBWP.PRO | </span>WordPress/WooCommerce site creation & technical support, with no surprises.</p>
+          <p class="lead"><span style="color: #fff; font-weight: 700">DBWP.PRO | </span>WordPress/WooCommerce site creation & technical support, with no surprises.</p>
           <button class="btn btn-primary cta mt-3" id="usp-anchor">Start here</button>
         </div>
       </div>

@@ -103,10 +103,12 @@
 input#search-input {
   background: none;
   border: none;
+  padding-bottom: 5px;
   border-bottom: 2px solid #303030;
   font-size: 1.2em;
   color: #303030;
-  font-weight: 700;
+  font-weight: 600;
+  padding-right: 30px;
 
   &:focus {
     outline: none;
@@ -116,6 +118,7 @@ input#search-input {
 #searchform {
   position: relative;
   vertical-align: middle;
+  text-align: center;
 
   &:focus {
     outline: none;
@@ -153,28 +156,24 @@ a#mk-fullscreen-close-button {
 }
 
 div#results-container {
-  padding: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  display: inline-block;
+  height: 175px;
+  text-align: center;
   justify-content: center;
+  overflow-y: auto;
+  width: 100%;
 }
 
 .result {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 40px;
+  display: inline-block;
   padding: 35px;
 
   .rounded-pill {
-    height: 21px;
     background: transparent !important;
     margin-left: 5px;
+    margin-top: 5px;
     font-size: 10px;
-    margin-bottom: 0px !important;
   }
 
   a {
@@ -192,8 +191,16 @@ div#results-container {
 }
 
 .no-results p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center !important;
   color: #212121;
-  font-weight: 800;
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+span#clear {
+  color: #212121;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-left: -15px;
 }

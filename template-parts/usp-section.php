@@ -52,7 +52,7 @@
       </div>
       <h1 class="display-5 fw-bold mb-3">WooCommerce & WordPress Site Design & Support</h1>
       <ol class="list-group list-group usp-list" style="margin-top: 30px">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <li class="list-group-item justify-content-between align-items-start">
           <span class="badge bg-primary rounded-pill" style="background: transparent !important; color: black !important">Contact</span>
           <div class="ms-2 me-auto">
             <div class="fw-bold">1. Reach out</div>
@@ -60,7 +60,7 @@
               with</span>
           </div>
         </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <li class="list-group-item justify-content-between align-items-start">
           <span class="badge bg-primary rounded-pill" style="background: transparent !important; color: black !important">Discuss</span>
           <div class="ms-2 me-auto">
             <div class="fw-bold">2. Work things out</div>
@@ -70,7 +70,7 @@
               work.</span>
           </div>
         </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <li class="list-group-item justify-content-between align-items-start">
           <span class="badge bg-primary rounded-pill" style="background: transparent !important; color: black !important">Execute</span>
           <div class="ms-2 me-auto">
             <div class="fw-bold">3. Sort things out</div>

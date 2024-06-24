@@ -3,7 +3,6 @@ class MenuOverlayShow {
     // Cache elements
     this.menuIconShape = document.getElementById("menu-icon-shape");
     this.headerNav = document.querySelector(".header-nav");
-    this.formIcon = document.querySelector("#contact-link-text > i");
     this.topMiddleBottom = document.querySelectorAll("#top, #middle, #bottom");
     this.overlayNav = document.querySelector("#overlay-nav");
     this.bodyHeaderNav = document.querySelector(
@@ -53,7 +52,6 @@ class MenuOverlayShow {
       element.classList.toggle("active", isActive)
     );
     this.overlayNav.classList.toggle("active", isActive);
-    this.formIcon.classList.toggle("active", isActive);
   }
 }
 

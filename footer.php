@@ -137,15 +137,6 @@
         });
       });
     }
-    const anchorLink2 = document.querySelector("#contact-link-text");
-    const anchorTarget2 = document.querySelector("#contact_form_top");
-    if (anchorTarget) {
-      anchorLink2.addEventListener("click", () => {
-        anchorTarget2.scrollIntoView({
-          behavior: "smooth"
-        });
-      });
-    }
   </script>
 
   <script>
