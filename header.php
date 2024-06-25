@@ -26,7 +26,6 @@
       </div>
     </div>
 
-
     <!-- Overlay menu -->
     <div id="overlay-nav">
       <div id="nav-content">
@@ -38,12 +37,13 @@
         <div id="mk-fullscreen-search-wrapper" style="padding-top: 30px">
           <form method="get" id="searchform" action="">
             <input type="text" value="" placeholder="Search..." id="search-input">
-            <span id="clear">x</span>
+            <span id="clear"><i class="fa-regular fa-trash-can"></i></span>
           </form>
           <div id="results-container">
-
           </div>
         </div>
+      </div>
+    </div>
 
   </header>
 

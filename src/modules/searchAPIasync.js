@@ -7,8 +7,9 @@ function searchAPI() {
   const doneTypingInterval = 500; // callback for timeout used for debouncer
 
   clearSearch.addEventListener("click", () => {
-    searchField.value = " ";
-    resultsContainer.innerHTML = "";
+    searchField.value = ""; // Clear the value
+    searchField.blur(); // Trigger blur to show placeholder
+    resultsContainer.innerHTML = ""; // Clear the results
   });
 
   searchField.addEventListener("keyup", function () {

@@ -103,7 +103,7 @@
 input#search-input {
   background: none;
   border: none;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   border-bottom: 2px solid #303030;
   font-size: 1.2em;
   color: #303030;
@@ -112,6 +112,11 @@ input#search-input {
 
   &:focus {
     outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 600;
+    color: #939393;
   }
 }
 
@@ -162,6 +167,7 @@ div#results-container {
   justify-content: center;
   overflow-y: auto;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .result {
@@ -200,7 +206,7 @@ div#results-container {
 
 span#clear {
   color: #212121;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.2rem;
-  margin-left: -15px;
+  margin-left: -22px;
 }
