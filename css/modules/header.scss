@@ -129,6 +129,8 @@ span#contact-link-text {
     width: 100%;
     height: 100%;
     opacity: 100;
+    overflow: scroll;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     visibility: visible;
@@ -138,9 +140,7 @@ span#contact-link-text {
 
 #nav-content {
   position: relative;
-  top: 55vh;
-  -webkit-transform: translateY(-40%);
-  transform: translateY(-40%);
+  top: 4em;
 }
 
 #nav-content ul {
