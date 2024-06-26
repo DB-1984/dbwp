@@ -32,8 +32,7 @@ class MenuOverlayShow {
 
   stopScroll() {
     const isActive = this.overlayNav.classList.contains("active");
-    this.bodyHeaderNav?.classList.toggle("modal-open", isActive);
-    this.logoText?.classList.toggle("modal-open", isActive);
+    document.documentElement.style.overflow = isActive ? "hidden" : "";
   }
 
   toggleMenu() {

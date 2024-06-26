@@ -34,7 +34,7 @@
           <div class="rounded p-4 folder-shape white" style="border-top-left-radius: 0px!important">
             <h1 class="display-5 usp"><span class="drop">04.</span></br> WooCommerce E-commerce</h1>
             <p class="lead">Take your brand to the next level with a <span class="text-highlight">professional, stylish
-                and SERP-optimised</span>e-commerce website.
+                and SERP-optimised</span> e-commerce website.
             </p>
           </div>
         </div>
