@@ -6,15 +6,28 @@ function searchAPI() {
   let debouncer; // declare initial state for debouncer, used to delay requests
   const doneTypingInterval = 500; // callback for timeout used for debouncer
 
+  // Function to update the visibility of the clearSearch button
+  function updateClearButtonVisibility() {
+    if (searchField.value.trim() === "") {
+      clearSearch.style.display = "none"; // Hide the clear button if input is empty
+    } else {
+      clearSearch.style.display = "inline"; // Show the clear button if input is not empty
+    }
+  }
+
+  // Initial check to set button visibility on page load
+  updateClearButtonVisibility();
+
   clearSearch.addEventListener("click", () => {
     searchField.value = ""; // Clear the value
     searchField.blur(); // Trigger blur to show placeholder
     resultsContainer.innerHTML = ""; // Clear the results
+    updateClearButtonVisibility(); // Update button visibility after clearing input
   });
 
   searchField.addEventListener("keyup", function () {
     clearTimeout(debouncer); // count to 500ms again
-    // the main search process, with a callback for the interval
+    updateClearButtonVisibility(); // Update button visibility on keyup
 
     debouncer = setTimeout(async () => {
       // prevent overloading - async cues up promise
@@ -73,4 +86,5 @@ function searchAPI() {
     }, doneTypingInterval);
   });
 }
+
 export default searchAPI;
