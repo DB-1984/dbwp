@@ -87,7 +87,7 @@
   }
 
   div#mk-fullscreen-search-wrapper {
-    padding-top: 40px !important;
+    padding-top: 50px !important;
   }
 
   .mk-fullscreen-close {
@@ -104,19 +104,19 @@ input#search-input {
   background: none;
   border: none;
   padding-bottom: 6px;
-  border-bottom: 2px solid #303030;
+  border-bottom: 5px solid #303030;
   font-size: 1em;
   color: #303030;
   font-weight: 500;
   padding-right: 30px;
-  width: 225px;
+  width: 50%;
 
   &:focus {
     outline: none;
   }
 
   &::placeholder {
-    font-weight: 600;
+    font-weight: 400;
     color: #939393;
   }
 }
@@ -205,7 +205,7 @@ div#results-container {
 
 span#clear {
   color: #212121;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 1rem;
   margin-left: -22px;
 }

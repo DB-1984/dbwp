@@ -37,7 +37,7 @@
         <div id="mk-fullscreen-search-wrapper" style="padding-top: 30px; height: 100%">
           <form method="get" id="searchform" action="">
             <input type="text" value="" placeholder="Search..." id="search-input">
-            <span id="clear"><i class="fa-regular fa-trash-can"></i></span>
+            <span id="clear">X</span>
           </form>
           <div id="results-container">
           </div>
